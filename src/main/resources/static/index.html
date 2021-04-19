@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Income Analyzer</title>
+</head>
+
+<body>
+
+    <form name="submission" action="IncomeAnalyser" method="post" modelAttribute="assessment">
+        <table>
+            <tr>
+                <td>Hourly Rate:</td><td><input type="text" name="hr_rate" value=""></td>
+            </tr>
+            <tr>
+                <td>Tax Form:</td><td><input type="text" name="tax_form" value="W2"></td>
+            </tr>
+            <tr>
+                <td>Filing Status:</td><td><input type="text" name="filing_status" value="M"></td>
+            </tr>
+            <tr>
+                <td>State:</td><td><input type="text" name="state" value="CA"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" name="btnSend" value="Send"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
