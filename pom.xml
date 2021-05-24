@@ -12,7 +12,7 @@
 
     <groupId>us.deans.projects</groupId>
     <artifactId>income_analyzer_sb</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <name>income_analyzer_sb</name>
     <description>IncomeAnalyzer: SpringBoot</description>
@@ -20,6 +20,8 @@
     <properties>
         <maven.compiler.source>10</maven.compiler.source>
         <maven.compiler.target>10</maven.compiler.target>
+        <encoding>UTF-8</encoding>
+        <revision>1.1.0-SNAPSHOT</revision>
     </properties>
 
     <dependencies>
@@ -68,5 +70,20 @@
 
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>artifactory</id>
+            <name>releases</name>
+            <url>https://coldfront.jfrog.io/artifactory/deans-application-release/</url>
+        </repository>
+        
+        <snapshotRepository>
+            <id>artifactory</id>
+            <name>Snapshot</name>
+            <url>https://coldfront.jfrog.io/artifactory/deans-application-snapshot/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
 
 </project>
