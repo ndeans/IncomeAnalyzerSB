@@ -73,14 +73,12 @@
 
     <distributionManagement>
         <repository>
-            <id>artifactory</id>
-            <name>releases</name>
+            <id>distribution-release</id>
             <url>https://coldfront.jfrog.io/artifactory/deans-application-release/</url>
         </repository>
-        
+
         <snapshotRepository>
-            <id>artifactory</id>
-            <name>Snapshot</name>
+            <id>distribution-snapshot</id>
             <url>https://coldfront.jfrog.io/artifactory/deans-application-snapshot/</url>
         </snapshotRepository>
 
